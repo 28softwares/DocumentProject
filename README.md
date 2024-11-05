@@ -11,4 +11,4 @@ Contribution are welcome. 🚀
 
 - Just clone this repo
 - Update your project details in docusarus.config.js
-- Start documenting your data in docs folder
+- Start documenting your data in docs/updates folder

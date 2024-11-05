@@ -41,18 +41,22 @@ const config: Config = {
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
         blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
+          showReadingTime: false,
+          path: "./updates/",
+          blogSidebarTitle: "Updates List",
+          showLastUpdateTime: true,
+          routeBasePath: "/updates",
+          // feedOptions: {
+          //   type: ["rss", "atom"],
+          //   xslt: true,
+          // },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
           // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
+          // onInlineTags: "warn",
+          // onInlineAuthors: "warn",
           onUntruncatedBlogPosts: "warn",
         },
         theme: {
@@ -78,7 +82,7 @@ const config: Config = {
           position: "left",
           label: "Docs",
         },
-        { to: "/blog", label: "Updates", position: "left" },
+        { to: "/updates", label: "Updates", position: "left" },
         {
           href: "https://github.com/facebook/docusaurus",
           label: "GitHub",
